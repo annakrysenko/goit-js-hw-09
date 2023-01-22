@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #fafafa;
+  color: #212121;
+  line-height: 1.5;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+a:visited{
+  color: tomato;
+}
+
+button {
+  cursor: pointer;
+}
+
+
+/* ========================== */
+.switch-container {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  margin-top: 30vh;
+  column-gap: 30px;
+}
+
+.btn-switch {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 600;
+  background-color: #fafafa;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+/* ======================= */
+
+.timer-body{
+  background-color: bisque;
+}
+
+.timer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  column-gap: 30px;
+  row-gap: 50px;
+  margin-top: 20vh;
+}
+.input-timer-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.timer {
+  display: flex;
+  gap: 30px;
+}
+
+
+.input-date{
+  padding: 20px;
+  font-size: 18px;
+  border: none;
+  background-color: #fafafa;
+    border-radius: 15px;
+}
+
+[data-start]{
+  background: #fff;
+  border: none;
+    border-radius: 15px;
+    padding: 15px;
+  
+}
+.field{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.value{
+  padding: 20px;
+  border: 1px solid black;
+  border-radius: 15px;
+  font-size: 20px;
+  font-weight: 800;
+  background-color: #fafafa;
+}
