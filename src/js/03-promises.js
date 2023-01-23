@@ -11,7 +11,7 @@ refs.formEl.addEventListener('submit', e => {
   const amount = +e.target.elements.amount.value;
 
   let intervalId = null;
-  let position = 0;
+  let position = 1;
 
   setTimeout(() => {
     console.log(delay);
