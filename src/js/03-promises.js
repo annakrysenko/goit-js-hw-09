@@ -13,10 +13,12 @@ refs.formEl.addEventListener('submit', e => {
   let intervalId = null;
   let position = 1;
 
+  
   setTimeout(() => {
     console.log(delay);
     createPromise({ position, delay })
       .then(({ position, delay }) => {
+        
         console.log(position, delay);
         console.log('then', delay + position * step);
         Notiflix.Notify.success(
@@ -50,7 +52,8 @@ refs.formEl.addEventListener('submit', e => {
         });
       
       position++;
-      if (position === amount) {
+      if (position > amount) {
+        console.log('position', position, "amount", amount)
         clearInterval(intervalId);
       }
     }, step);
